@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    background-color:chocolate;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: 0;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+}
+.logo-header {
+    background-color: black;
+}
+
+nav{
+    width: 60%;
+    
+}
+
+ul {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+    color:bisque;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+}
+
+li:hover{
+    color:chocolate
+}
+
+#logo {
+    height: 70px;
+    width: auto;
+    
+
+}
+
+#banner {
+    
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-image: url(./oneeye.JPG);
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+
+
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+
+}
+
+.description {
+    color: black;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    display: inline-flex;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: bisque;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.button:hover {
+    background-color: bisque;
+    color: black;
+
+}
+
+
+.products-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.cards-content {
+   width: 90%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 20px;
+   column-gap: 40px; 
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url(./midias/lata1.JPG);
+}
+
+.banner-2{
+    background-image: url(./midias/lata2.JPG);
+}
+
+.banner-3{
+    background-image: url(./midias/lata3.JPG);
+}
+
+.banner-5{
+    background-image: url(./midias/adesivo.JPG);
+}
+
+.banner-6{
+    background-image: url(./midias/bolacha.JPG);
+}
+
+.banner-7{
+    background-image: url(./midias/bone.JPG);
+}
+
+.banner-8{
+    background-image: url(./midias/copo.JPG);
+}
+
+.banner-9{
+    background-image: url(./midias/ecobag.JPG);
+}
+
+.banner-10{
+    background-image: url(./midias/Moleton1.JPG);
+}
+
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+span {
+    color:bisque;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+    
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo2 {
+    height: 180px;
+    width: auto;
+
+}
+
+@media (max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40%
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: conlumn;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: scpace-between;
+    }
+
+    .description {
+        width: 100%
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
+.nossas_cervejas{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+
+.trailer{
+    width: 50%;
+
+
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+
+}
+
+.description {
+    color: black;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    display: inline-flex;
+} 
+
+
+
+#nossos_contatos {
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.letstalk {
+    width: 60%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.send_form {
+    color: black;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    display: initial;
+    margin-top: 50;
+}
+
+.enviar {
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: bisque;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.enviar:hover {
+    background-color: bisque;
+    color: black;
+
+}
+
+.email{
+    margin-top: 15px;
+}
+
+.redesocial{
+    margin-top: 15px;
+}
+
+.name{
+    width: 550px;
+    height: 25px;
+    font-size: 15px;
+    background-color: bisque;
+}
+
+.mailbox{
+    width: 550px;
+    height: 25px;
+    font-size: 15px;
+    background-color: bisque;
+}
+
+.message{
+    width: 550px;
+    height: 125px;
+    font-size: 15px;
+    background-color: bisque;
+    border-style: inset;
+    border-width: initial;
+}
+.form1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 150px;
+}
